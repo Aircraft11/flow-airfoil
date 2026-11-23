@@ -36,7 +36,7 @@ coords = cst_shape_vector_to_coords(np.concatenate((upper, lower)), n_points=181
 
 ### (2) Generate airfoils for an aerodynamic target
 
-The example uses a main-model checkpoint supplied separately. For Mach 0.3 and an angle of attack of 2 degrees, request lift, drag, and pitching-moment coefficients of 0.6, 0.009, and -0.04.
+Download `best_run1.pt` into `checkpoints/`. For Mach 0.3 and an angle of attack of 2 degrees, request lift, drag, and pitching-moment coefficients of 0.6, 0.009, and -0.04. [Release downloads](https://github.com/Aircraft11/flow-airfoil/releases/tag/v0.1.0)
 
 ```sh
 flow-airfoil-generate --checkpoint checkpoints/best_run1.pt --device cpu --mach 0.3 --alpha 2.0 --cl 0.6 --cd 0.009 --cm -0.04 --out-dir out/generated
@@ -51,6 +51,12 @@ Install [XFOIL](https://web.mit.edu/drela/Public/web/xfoil/) separately and pass
 ```sh
 flow-airfoil-xfoil --xfoil /path/to/xfoil --dat out/generated/candidate_001.dat --mach 0.3 --alpha 2.0 --output out/xfoil_single
 ```
+
+## Checkpoints and data
+
+The release includes three CST-20 checkpoints and AFBench-derived airfoil ID splits and normalization statistics. Place `splits.csv` and `normalization.json` in `data/` for data preparation. Obtain the original archives from the [AFBench project](https://hitcslj.github.io/afbench/).
+
+The checkpoints are provided for noncommercial research under CC BY-NC 4.0. The split and normalization files are distributed under CC BY-NC-SA 4.0. Please cite AFBench when using these files. [Release downloads](https://github.com/Aircraft11/flow-airfoil/releases/tag/v0.1.0)
 
 ## Project layout
 
