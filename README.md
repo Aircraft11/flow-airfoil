@@ -66,7 +66,7 @@ The checkpoints are provided for noncommercial research under CC BY-NC 4.0. The 
 | `examples/` | Generated airfoil results |
 | `configs/` | Selected settings for the three main-model runs |
 
-Additional main-model training code is planned for release after manuscript acceptance.
+We will open-source the remaining core code for training the model after the paper is published.
 
 ## References
 
