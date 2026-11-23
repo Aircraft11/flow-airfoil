@@ -1,4 +1,4 @@
-# Reliability-aware reversible flow matching for airfoil design
+# Flow Airfoil
 
 This repository accompanies the manuscript **"Reliability-aware reversible flow matching for bidirectional airfoil prediction and generation."** The study uses a shared continuous transport model for aerodynamic coefficient prediction, response-conditioned two-dimensional airfoil generation, and internal candidate screening. Its reported evaluations use AFBench airfoil data and XFOIL-based aerodynamic labels.
 
