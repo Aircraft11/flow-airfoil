@@ -65,6 +65,7 @@ The checkpoints are provided for noncommercial research under CC BY-NC 4.0. The 
 | `src/` | CST geometry, model inference, data preparation, evaluation, and XFOIL interface |
 | `examples/` | Generated airfoil results |
 | `configs/` | Selected settings for the three main-model runs |
+| `xfoil/` | XFOIL evaluation cases and manifest, including AFBench-derived target labels (CC BY-NC-SA 4.0) |
 
 We will open-source the remaining core code for training the model after the paper is published.
 
