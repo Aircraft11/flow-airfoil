@@ -1,0 +1,14 @@
+__pycache__/
+*.egg-info/
+.venv/
+.ruff_cache/
+/build/
+/dist/
+/data/
+/checkpoints/
+/xfoil/
+*.pt
+*.pth
+*.ckpt
+runs/
+out/

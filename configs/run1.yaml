@@ -1,0 +1,29 @@
+# Selected settings for the reported main-model run.
+data:
+  max_train_samples: 900000
+  max_val_samples: 64000
+model:
+  generator_type: joint_flow_diffusion
+  hidden: 768
+  dropout: 0.04
+  residual_mlp: true
+  condition_embed_dim: 6
+  condition_encoder_depth: 2
+  condition_fourier_features: true
+  adaptive_coupling: true
+  adaptive_coupling_strength: 0.1
+  flow_matching_depth: 7
+  flow_matching_time_embed_dim: 64
+  flow_matching_steps_train: 16
+  flow_matching_steps_eval: 16
+  flow_matching_solver: heun
+  joint_forward_flow_weight: 1.0
+  latent_prior_clip: 0.5
+train:
+  epochs: 8
+  batch_size: 768
+  grad_accum_steps: 2
+  lr: 7.5e-05
+  weight_decay: 0.0002
+  warmup_steps: 300
+  amp: true
