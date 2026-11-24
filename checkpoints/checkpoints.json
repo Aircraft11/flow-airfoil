@@ -1,0 +1,29 @@
+[
+  {
+    "replicate": 1,
+    "source_sha256": "eecaa09936174342a4781293d82411ad5be29174e9f1e82d1d07ee6b50c74c70",
+    "release_sha256": "e1eee6294fee01c04785804e0926abe72931b0801b257921c57a14d5ca22172d",
+    "checkpoint": "checkpoints/best_run1.pt",
+    "train_config": "configs/run1.yaml",
+    "epoch_index": 7,
+    "optimizer_step": 4688
+  },
+  {
+    "replicate": 2,
+    "source_sha256": "605adfae579ae09a696ff6be22f80244149d979b9821f4311727d6ef173fc7e3",
+    "release_sha256": "9bae9ce3693e9ff41e43bda95bb5d76df4c62e3319e8e61e3d0aeb9b00c5318d",
+    "checkpoint": "checkpoints/best_run2.pt",
+    "train_config": "configs/run2.yaml",
+    "epoch_index": 7,
+    "optimizer_step": 4688
+  },
+  {
+    "replicate": 3,
+    "source_sha256": "fd6d6d1b9e70689051c65a92ef654f64fbd4a5e3cc4486094e27ffbc45a575e2",
+    "release_sha256": "b2494e5c6a790e36df15b3b5480df3898916c0652ab2dce556096a40a5e350d3",
+    "checkpoint": "checkpoints/best_run3.pt",
+    "train_config": "configs/run3.yaml",
+    "epoch_index": 7,
+    "optimizer_step": 4688
+  }
+]
