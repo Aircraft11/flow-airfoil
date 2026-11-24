@@ -1,4 +1,4 @@
-"""Generate CST-20 airfoil DAT files from a checkpoint and physical targets."""
+"""Generate CST airfoil DAT files from a checkpoint and physical targets."""
 
 import argparse
 import json

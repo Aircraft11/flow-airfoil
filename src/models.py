@@ -1,4 +1,4 @@
-"""Network and ODE used by the CST-20 inference checkpoints."""
+"""Network and ODE used by the reversible flow matching model."""
 
 from __future__ import annotations
 
@@ -116,7 +116,7 @@ class ConditionEncoder(nn.Module):
 class JointAeroFlowDiffusion(nn.Module):
     """Conditional ODE connecting [aerodynamic coefficients, latent] to shape.
 
-    In the released CST-20 model, the source contains three normalized
+    In the released reversible flow matching model, the source contains three normalized
     aerodynamic coefficients and 17 latent components. The destination contains
     20 normalized CST coefficients.
     """
@@ -212,7 +212,7 @@ class JointAeroFlowDiffusion(nn.Module):
 
 
 class BidirectionalAirfoilFlow(nn.Module):
-    """Run the CST-20 checkpoint in either direction with the same vector field."""
+    """Run inference in either direction with the same vector field."""
 
     def __init__(self, config):
         super().__init__()
@@ -221,7 +221,7 @@ class BidirectionalAirfoilFlow(nn.Module):
             or config.get("joint_forward_residual_weight", 0) != 0
             or not config.get("gated_residual_blocks", True)
         ):
-            raise ValueError("Expected the main CST-20 model architecture")
+            raise ValueError("Expected the reversible flow matching architecture with 20 CST coefficients")
         hidden = config["hidden"]
         embed_dim = int(config["condition_embed_dim"])
         self.condition_encoder = (

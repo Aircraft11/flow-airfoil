@@ -1,4 +1,4 @@
-"""Rebuild the CST-20 input arrays from the AFBench archives."""
+"""Rebuild the input arrays for the 20-coefficient CST representation from the AFBench archives."""
 
 from __future__ import annotations
 

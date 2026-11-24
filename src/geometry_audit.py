@@ -1,4 +1,4 @@
-"""Nested coordinate audit used for the main CST-20 evaluation."""
+"""Nested coordinate audit used to evaluate the main model."""
 
 import numpy as np
 

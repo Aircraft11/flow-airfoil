@@ -54,7 +54,7 @@ flow-airfoil-xfoil --xfoil /path/to/xfoil --dat out/generated/candidate_001.dat 
 
 ## Checkpoints and data
 
-The release includes three CST-20 checkpoints and AFBench-derived airfoil ID splits and normalization statistics. Place `splits.csv` and `normalization.json` in `data/` for data preparation. Obtain the original archives from the [AFBench project](https://hitcslj.github.io/afbench/).
+The release includes three checkpoints for the reversible flow matching model and AFBench-derived airfoil ID splits and normalization statistics. Place `splits.csv` and `normalization.json` in `data/` for data preparation. Obtain the original archives from the [AFBench project](https://hitcslj.github.io/afbench/).
 
 The checkpoints are provided for noncommercial research under CC BY-NC 4.0. The split and normalization files are distributed under CC BY-NC-SA 4.0. Please cite AFBench when using these files. [Release downloads](https://github.com/Aircraft11/flow-airfoil/releases/tag/v0.1.0)
 

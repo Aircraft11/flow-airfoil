@@ -1,5 +1,5 @@
 {
-  "model": "Reversible flow matching (CST-20)",
+  "model": "Reversible flow matching",
   "coefficient_correction": "none",
   "solver_sha256": "53ff2b4e70da993f8c21f9eca6f851c08f18fb3db3cd0e6589ded76663758049",
   "original_runner_sha256": "82a403659393a405ff76c0c7479d81cc19ccc0d3812ce7c0891f0d7338582585",
